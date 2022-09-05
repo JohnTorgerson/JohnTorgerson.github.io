@@ -1,48 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-    <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Responsive Columns</title>
+
+  <!-- Set the viewport the way Bootstrap likes it -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bring in the Bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- Bring in our own stylesheet, AFTER Bootstrap  -->
+  <link rel="stylesheet" href="bio_style.css">
 </head>
 
 <body>
 
-  <h1>Darth Vader</h1>
+  <div class="container">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-3 col-sm-6 col-md-12">
+        <h1>Darth Vader</h1>
 
-  <img src="https://preview.redd.it/yriap9fnk6u71.jpg?auto=webp&s=1a653e5e54c5ca4ff9d4342fa862a7a12693b18b" alt="Your Name">
+        <img src="https://preview.redd.it/yriap9fnk6u71.jpg?auto=webp&s=1a653e5e54c5ca4ff9d4342fa862a7a12693b18b" alt="Your Name">
+      
+        <h3>Technically its not domestic assault if I say its Obiwan's fault.</h3>
+        <h2>Don't make me destroy you.</h2>
+      
+        <ul>
+          <li><strong>Email:</strong> <a href="#">master.now@darkside.com</a></li>
+          <!-- <li><strong>Github:</strong> <a href="#">Vader6000</a></li>
+          <li><strong>Twitter:</strong> <a href="#">coming soon</a></li> -->
+        </ul>
+      </div>  
+    </div>
 
-  <p>Technically its not domestic assault if I say its Obiwan's fault.</p>
-  <p>Don't make me destroy you.</p>
+    <!--These col-md-3 columns go half wide when on a small screen and full on extra small-->
+    <div class="row">
+      
+    </div>
+<!--
+    These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
+    <div class="row">
+      <div class="col-3 col-sm-6 col-md-12">
+        <table class="table table-dark table-striped">
+          <tr>
+            <th>Song</th>
+            <th>Artist</th>
+            
+          </tr>
+          <tr>
+            <td>Just Breathe</td>
+            <td>Pearl Jam</td>
+          </tr>  
+            <td>Breathe</td>
+            <td>Pink Floyd</td>
+          </tr>
+            <td>Breath Again</td>
+            <td>Toni Braxton</td>
+          </tr>
+        
+        </table>
+        <!-- <div class="box red">col-xs-3 col-sm-6 col-md-12</div> -->
+      </div>
+      
+    </div>
+  </div>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">master.now@darkside.com</a></li>
-    <li><strong>Github:</strong> <a href="#">Vader6000</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Song</th>
-      <th>Artist</th>
-      <th></th>
-    </tr>
-    <tr>
-      <td>Just Breathe</td>
-      <td>Breathe</td>
-      <td>Breath Again</td>
-    </tr>
-    <tr>
-      <td>Pearl Jam</td>
-      <td>Pink Floyd</td>
-      <td>Toni Braxton</td>
-    </tr>
-  </table>
-
-  <!-- Bonus link to last class page -->
-  <a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
+  <!-- Import the Bootstrap JavaScript code -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 
